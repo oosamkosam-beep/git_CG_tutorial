@@ -46,20 +46,17 @@ vim.keymap.set("n", "<leader>fw", function()
 
 vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
-  --------------------------------------------------------------------
-  -- ★★ 最優先: nvim-web-devicons を絶対にロードする設定 ★★
-  --------------------------------------------------------------------
+
   {
     "nvim-tree/nvim-web-devicons",
-    lazy = false,          -- ← 必ず起動時に読み込む
-    priority = 1000,       -- ← すべてのプラグインより先にロード
+    lazy = false,        
+    priority = 1000,    
     config = function()
       require("nvim-web-devicons").setup({ default = true })
       vim.g.loaded_webdevicons = 1
     end,
   },
 
-  -- ★★ oil.nvim★★
   {
     "stevearc/oil.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
@@ -73,7 +70,7 @@ require("lazy").setup({
         },
 
         columns = {
-          "icon",     -- ← アイコン表示が有効になる
+          "icon",    
         },
 
         keymaps = {
@@ -110,7 +107,6 @@ require("lazy").setup({
     end,
   },
 
-  -- ★★ snacks.nvim★★
   {
     "folke/snacks.nvim",
     priority = 1000,
