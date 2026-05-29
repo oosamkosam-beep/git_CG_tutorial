@@ -6,6 +6,12 @@ $OutputEncoding = [System.Text.Encoding]::UTF8
 Set-PSReadLineOption -EditMode Vi
 Set-PSReadLineOption -ViModeIndicator Cursor
 
+Set-Alias ls Get-Childitem
+
+Set-Alias rm Remove-Item
+Set-Alias cp Copy-Item
+Set-Alias mv Move-Item
+
 function prompt {
     $path = Get-Location
     Write-Host "PS" "$path" -NoNewline -ForegroundColor Cyan 
