@@ -42,7 +42,11 @@ AOV
 おまけ
 > メモリ削減のために面が閉じていないモデルを作ってしまうと、エフェクトをつけようとする際に問題が生じる。
 > 先生のおすすめするレンダラー: RenderMan(blenderでも使える。)( ピクサー(現在のCGの大本をほとんど作った)が作ったレンダラー)
+> 時短できるならありものを加工して作ってもいい
 
 おすすめの参考文献
 > 動画 principal motion 動きの12原則
-> 書籍 ELEMENTAL MAGIC 
+> 書籍 ELEMENTAL MAGIC
+
+> material : polyheven
+> refarence : artstation
